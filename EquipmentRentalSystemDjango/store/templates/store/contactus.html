@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/contactus.css' %}">
+</head>
+<body>
+    <header>
+        <div class="header1">
+          <h1>Farmer Equipment Rental System</h1>
+        </div>
+        <!-- <div class="header2">
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+    
+          </ul>
+        </nav>
+      </div> -->
+      </header>
+      
+        <div class="content">
+            <h1>CONTACT US</h1>
+        </div>
+
+        <section class="contact">
+          <p>feel free to reach out to us. If you have any questions or inquiries,  We are here to help!</p>
+
+          <div class="contact-details">
+            <div class="contact-info">
+              <h3>Our Location</h3>
+              <p>123 Farmer Equipment Rental System, Bengaluru,  INDIA, 555555 </p>
+            
+            </div>
+
+            <div class="contact-info">
+              <h3>Email Us</h3>
+              <p>Email: <a href="mailto:Support.rental@gmail.com">Support.rental@gmail.com</a></p>
+            </div>
+
+            <div class="contact-info">
+              <h3>Call Us</h3>
+              <p>Phone: +91 9998889999</p>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="" method="POST">
+              {% csrf_token %}
+              <div class="innercontact">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="innercontact">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+              <div class="innercontact">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </section>
+
+        <script src="script.js"></script>
+
+
+
+</body>
+</html>

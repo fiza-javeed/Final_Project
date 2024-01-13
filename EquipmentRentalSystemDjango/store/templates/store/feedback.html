@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    {% load static %}
+	<link rel="stylesheet" href="{% static 'css/feedback.css' %}">
+</head>
+<body>
+
+    <header>
+        <div class="header1">
+          <h1>Farmer Equipment Rental System</h1>
+        </div>
+    </header>
+
+        <div class="content">
+            <h1>Feedback Page</h1>
+        </div>
+
+    <section>
+        <form id="feedbackForm"  action="" method="POST">
+            {% csrf_token %}
+            <div class="innercontent">
+                <label for="name">Name:</label> 
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="innercontent">
+            <label for="number">Number:</label>
+            <input type="" id="number" name="number" maxlength="10" required>
+            </div>
+            <br>
+            <h2>Please Share Your Experience</h2>
+            <br>
+            <div class="innercontent">
+                <label for="number">How happy were you with our equipment you rented?</label>
+                <input type="text" id="question1" name="question1"  placeholder="Poor / Good / Excellent" required>
+            </div>
+            <div class="innercontent">
+                <label for="number">Was the renting process easy and quick as you expected?</label>
+                <input type="text" id="question2" name="question2"  placeholder="Yes / No " required>
+            </div>
+            <div class="innercontent">
+                <label for="number">Were the costs clear, or did you find any unexpected charges?</label>
+                <input type="text" id="question3" name="question3" placeholder="Yes / No " required>                 
+            </div>
+            <div class="innercontent">
+                <label for="number">How well did the customer support assist you with any issues or questions?</label>
+                <input type="text" id="question4" name="question4"  placeholder="Poor / Good / Excellent" required>
+            </div>
+            <div class="innercontent">
+                <label for="number">Would you suggest this rental service to others based on your experience?</label>
+                <input type="text" id="question5" name="question5" placeholder="Poor / Good / Excellent" required>                 
+            </div>
+
+            <div class="innercontent">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <script src="feedback.js"></script>
+
+</body>
+</html>

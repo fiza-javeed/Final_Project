@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    height: 60px;
+    color: #ffffff;
+    padding: 5px;
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.header1{
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-top: -10px;
+    text-align: center;
+}
+  .header2{
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 50px;
+  }
+  nav li a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  nav li a:hover{
+    color: orange;
+    text-decoration: none;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    color: #ffffff;
+    background-color: rgb(255, 170, 80);
+  }
+
+
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  .about-us {
+    text-align: justify;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-us p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 600px) {
+    .about-us {
+      padding: 30px;
+    }
+  }
+  
